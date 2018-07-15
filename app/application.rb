@@ -1,7 +1,7 @@
 require "pry"
 class Application
 
-  @@items = [Item.new("Apples",5.23), Item.new("Oranges",2.43)]
+  @@items = [Item.new("Bananas", 1.19), Item.new("Watermelon", 3.87)]
   def call(env)
     resp = Rack::Response.new
     req = Rack::Request.new(env)
